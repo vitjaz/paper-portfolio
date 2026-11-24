@@ -1,0 +1,21 @@
+{
+  "name": "vitaliy-alexeev-paper-world",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "VITALIY ALEXEEV — PAPER WORLD: an interactive papercraft diorama portfolio",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "three": "0.187.0"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.65.1",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.11"
+  }
+}

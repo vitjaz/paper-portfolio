@@ -1,0 +1,9 @@
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+  build: {
+    target: 'es2020',
+    chunkSizeWarningLimit: 1400,
+  },
+  server: { port: 5173 },
+});

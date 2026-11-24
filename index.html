@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#e0d3b8" />
+  <title>Vitaliy Alexeev — Paper World</title>
+  <meta name="description" content="VITALIY ALEXEEV — Senior AI Platform Engineer. An interactive papercraft diorama of an engineering career: IDE assistants, MCP integrations, autonomous agents and LLM telemetry." />
+  <meta property="og:title" content="Vitaliy Alexeev — Paper World" />
+  <meta property="og:description" content="Building AI infrastructure for engineering teams. Explore the paper world." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23c9a475'/%3E%3Crect x='7' y='7' width='50' height='50' fill='%23f2e9d6'/%3E%3Cpath d='M20 46V26l12-7 12 7v20' fill='none' stroke='%23b75f40' stroke-width='4'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <div id="stage" aria-hidden="true"></div>
+
+  <div class="vignette" aria-hidden="true"></div>
+
+  <header class="masthead" id="masthead">
+    <div class="masthead__paper">
+      <p class="eyebrow" id="masthead-eyebrow">Paper World · Portfolio</p>
+      <h1>Vitaliy Alexeev</h1>
+      <p class="role">Senior AI Platform Engineer</p>
+      <p class="claim" id="masthead-claim">Building AI infrastructure for engineering teams.</p>
+      <p class="welcome" id="masthead-welcome">Welcome to my world. Explore the objects to discover my story.</p>
+      <p class="cta" id="masthead-cta">Click, explore, unfold.</p>
+    </div>
+  </header>
+
+  <nav class="chips" id="chips" aria-label="Sections"></nav>
+
+  <div class="toolbar">
+    <button class="paper-btn" id="lang" type="button" aria-label="Switch language">RU</button>
+    <button class="paper-btn" id="reset" type="button">Reset view</button>
+    <button class="paper-btn explore-toggle" id="explore-toggle" type="button" aria-expanded="false">Explore all</button>
+  </div>
+
+  <div class="explore-panel" id="explore-panel" hidden>
+    <p class="explore-panel__title" id="explore-title">Objects in this world</p>
+    <div class="explore-panel__list" id="explore-list"></div>
+  </div>
+
+  <div class="tooltip" id="tooltip" hidden>
+    <span class="tooltip__kicker" id="tooltip-kicker"></span>
+    <span class="tooltip__title" id="tooltip-title"></span>
+    <span class="tooltip__hint" id="tooltip-hint"></span>
+  </div>
+
+  <aside class="panel" id="panel" aria-live="polite" hidden>
+    <div class="panel__paper">
+      <div class="panel__tape" aria-hidden="true"></div>
+      <button class="panel__close" id="panel-close" type="button" aria-label="Close">×</button>
+      <div class="panel__scroll" id="panel-scroll">
+        <p class="panel__eyebrow" id="panel-eyebrow"></p>
+        <h2 class="panel__title" id="panel-title"></h2>
+        <p class="panel__lead" id="panel-lead"></p>
+        <div class="panel__body" id="panel-body"></div>
+        <div class="panel__related" id="panel-related"></div>
+        <div class="panel__links" id="panel-links"></div>
+      </div>
+    </div>
+  </aside>
+
+  <div class="hint" id="hint">Click, explore, unfold.</div>
+
+  <div class="loader" id="loader">
+    <div class="loader__paper">
+      <div class="loader__roof" aria-hidden="true"></div>
+      <p class="loader__kicker">VITALIY ALEXEEV</p>
+      <h2 id="loader-title">Unfolding the paper world…</h2>
+      <p id="loader-hint">Cutting card, printing ink, folding hinges</p>
+      <div class="loader__bar"><span id="loader-bar"></span></div>
+    </div>
+  </div>
+
+  <div class="fallback" id="fallback" hidden>
+    <div class="fallback__paper">
+      <h2>Vitaliy Alexeev — Senior AI Platform Engineer</h2>
+      <p id="fallback-text"></p>
+      <div id="fallback-list"></div>
+    </div>
+  </div>
+
+  <noscript>
+    <div class="fallback"><div class="fallback__paper">
+      <h2>Vitaliy Alexeev — Senior AI Platform Engineer</h2>
+      <p>This interactive paper world needs JavaScript. Please enable it, or write to jameshudsonrandall@gmail.com.</p>
+    </div></div>
+  </noscript>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
