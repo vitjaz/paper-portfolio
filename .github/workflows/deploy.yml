@@ -12,7 +12,10 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  # Never interrupt a Pages deployment that is already in flight:
+  # GitHub cannot cancel it cleanly and the run fails with
+  # "Unable to cancel deployment ... as it's finished".
+  cancel-in-progress: false
 
 jobs:
   build:
